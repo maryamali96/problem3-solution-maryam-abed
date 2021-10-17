@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Add Fridge Items</title>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<META NAME='rating' CONTENT='General' />
+<META NAME='expires' CONTENT='never' />
+<META NAME='language' CONTENT='English, EN' />
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onload="doShowAll()">
+	<h2>Fridge Items</h2>
+	<p>Insert items and quantity for your Fridge. </p>
+	<form name=FridgeList>
+
+		<div id="main">
+			<table>
+				<tr>
+
+					<td><b>Item:</b><input type=text name=name></td>
+					<td><b>Quantity:</b><input type=text name=data></td>
+					<td><input type=button value="X" onclick="RemoveItem()"></td>
+
+				</tr>
+
+				<tr>
+					<td>
+					    <input type=button value="Add"   onclick="addItem()">    
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="items_table">
+			<h3>Fridge List</h3>
+			<table id=list></table>
+		</div>
+	</form>
+
+</body>
+</html>
